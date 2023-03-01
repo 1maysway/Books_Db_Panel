@@ -46,7 +46,7 @@ function Genres() {
       <Grid item xs={12}>
         <Grid container spacing={2}>
             <Grid item xs={3}>
-                <Link to={"/genres/add"}>
+                <Link to={"/Books_Db_Panel/genres/add"}>
                     <button className="button">Add Genre</button>
                 </Link>
             </Grid>
@@ -57,7 +57,7 @@ function Genres() {
             {genres.map(({name,id})=>
                 (
                     <Grid item xs={12} key={id} className='genres_list_item'>
-                        <Link to={"/genres/"+id} className='genres_list_item_link'>
+                        <Link to={"/Books_Db_Panel/genres/"+id} className='genres_list_item_link'>
                             <Grid container  className='genres_list_item_container'>
                                 <Grid item xs='auto'>
                                     <h3>{name}</h3>

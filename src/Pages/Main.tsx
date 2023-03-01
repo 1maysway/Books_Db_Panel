@@ -15,19 +15,19 @@ function Main() {
     const sections:SectionButtonData[]=[
         {
             title:'Books',
-            link:'/books'
+            link:'/Books_Db_Panel/books'
         },
         {
             title:'Authors',
-            link:'/authors'
+            link:'/Books_Db_Panel/authors'
         },
         {
             title:'Genres',
-            link:'/genres'
+            link:'/Books_Db_Panel/genres'
         },
         {
             title:'Publishers',
-            link:'/publishers'
+            link:'/Books_Db_Panel/publishers'
         },
     ]
 

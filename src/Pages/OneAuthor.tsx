@@ -67,7 +67,7 @@ function OneAuthor() {
                     "Content-Type": "application/json"
                 }
             });
-            window.location.assign('/authors')
+            window.location.assign('/Books_Db_Panel/authors')
         }
         catch(error){
             console.log(error);
@@ -76,7 +76,7 @@ function OneAuthor() {
 
     useEffect(()=>{
         if(!isNumber(authorsId)){
-            window.location.assign('/authors');
+            window.location.assign('/Books_Db_Panel/authors');
             return;
         }
         FetchAuthor();
@@ -89,7 +89,7 @@ function OneAuthor() {
                     "Content-Type": "application/json"
                 }
             });
-            window.location.assign('/authors')
+            window.location.assign('/Books_Db_Panel/authors')
         }
         catch(error:any){
             console.log(error);

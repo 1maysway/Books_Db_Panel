@@ -62,7 +62,7 @@ function OneGenre() {
                     "Content-Type": "application/json"
                 }
             });
-            window.location.assign('/genres')
+            window.location.assign('/Books_Db_Panel/genres')
         }
         catch(error:any){
             console.log(error);
@@ -77,7 +77,7 @@ function OneGenre() {
                     "Content-Type": "application/json"
                 }
             });
-            window.location.assign('/genres')
+            window.location.assign('/Books_Db_Panel/genres')
         }
         catch(error){
             console.log(error);
@@ -86,7 +86,7 @@ function OneGenre() {
 
     useEffect(()=>{
         if(!isNumber(genresId)){
-            window.location.assign('/genres');
+            window.location.assign('/Books_Db_Panel/genres');
             return;
         }
         FetchGenre();

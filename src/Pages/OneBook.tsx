@@ -66,7 +66,7 @@ function OneBook() {
                     "Content-Type": "application/json"
                 }
             });
-            window.location.assign('/books')
+            window.location.assign('/Books_Db_Panel/books')
         }
         catch(error){
             console.log(error);
@@ -80,7 +80,7 @@ function OneBook() {
                     "Content-Type": "application/json"
                 }
             });
-            window.location.assign('/books')
+            window.location.assign('/Books_Db_Panel/books')
         }
         catch(error:any){
             console.log(error);
@@ -90,7 +90,7 @@ function OneBook() {
 
     useEffect(()=>{
         if(!isNumber(booksId)){
-            window.location.assign('/books');
+            window.location.assign('/Books_Db_Panel/books');
             return;
         }
         FetchBook();

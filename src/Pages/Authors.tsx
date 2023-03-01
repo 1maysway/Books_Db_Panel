@@ -49,7 +49,7 @@ function Authors() {
       <Grid item xs={12}>
         <Grid container spacing={2}>
             <Grid item xs={3}>
-                <Link to={"/authors/add"}>
+                <Link to={"/Books_Db_Panel/authors/add"}>
                     <button className="button">Add Author</button>
                 </Link>
             </Grid>
@@ -60,7 +60,7 @@ function Authors() {
             {authors.map(({fullName,id})=>
                 (
                     <Grid item xs={12} key={id} className='authors_list_item'>
-                        <Link to={"/authors/"+id} className='authors_list_item_link'>
+                        <Link to={"/Books_Db_Panel/authors/"+id} className='authors_list_item_link'>
                             <Grid container  className='authors_list_item_container'>
                                 <Grid item xs='auto'>
                                     <h3>{fullName}</h3>

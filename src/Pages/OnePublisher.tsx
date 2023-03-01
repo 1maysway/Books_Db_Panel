@@ -65,7 +65,7 @@ function OnePublisher() {
                     "Content-Type": "application/json"
                 }
             });
-            window.location.assign('/publishers')
+            window.location.assign('/Books_Db_Panel/publishers')
         }
         catch(error:any){
             console.log(error);
@@ -75,7 +75,7 @@ function OnePublisher() {
 
     useEffect(()=>{
         if(!isNumber(publishersId)){
-            window.location.assign('/publishers');
+            window.location.assign('/Books_Db_Panel/publishers');
             return;
         }
         FetchPublisher();
@@ -88,7 +88,7 @@ function OnePublisher() {
                     "Content-Type": "application/json"
                 }
             });
-            window.location.assign('/publishers')
+            window.location.assign('/Books_Db_Panel/publishers')
         }
         catch(error){
             console.log(error);

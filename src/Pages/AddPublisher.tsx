@@ -25,7 +25,7 @@ function AddAuthor() {
                 "Content-Type": "application/json"
             }
         });
-        window.location.assign('/publishers')
+        window.location.assign('/Books_Db_Panel/publishers')
     }
     catch(error){
         console.log(error);

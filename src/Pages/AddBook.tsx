@@ -31,7 +31,7 @@ function AddBook() {
                 "Content-Type": "application/json"
             }
         });
-        window.location.assign('/books')
+        window.location.assign('/Books_Db_Panel/books')
     }
     catch(error){
         console.log(error);

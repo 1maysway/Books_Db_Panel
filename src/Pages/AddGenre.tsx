@@ -24,7 +24,7 @@ function AddGenre() {
                 "Content-Type": "application/json"
             }
         });
-        window.location.assign('/genres')
+        window.location.assign('/Books_Db_Panel/genres')
     }
     catch(error){
         console.log(error);

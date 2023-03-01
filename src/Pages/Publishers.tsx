@@ -46,7 +46,7 @@ function Publishers() {
       <Grid item xs={12}>
         <Grid container spacing={2}>
             <Grid item xs={3}>
-                <Link to={"/publishers/add"}>
+                <Link to={"/Books_Db_Panel/publishers/add"}>
                     <button className="button">Add Publisher</button>
                 </Link>
             </Grid>
@@ -57,7 +57,7 @@ function Publishers() {
             {publishers.map(({name,id})=>
                 (
                     <Grid item xs={12} key={id} className='publishers_list_item'>
-                        <Link to={"/publishers/"+id} className='publishers_list_item_link'>
+                        <Link to={"/Books_Db_Panel/publishers/"+id} className='publishers_list_item_link'>
                             <Grid container  className='publishers_list_item_container'>
                                 <Grid item xs='auto'>
                                     <h3>{name}</h3>
