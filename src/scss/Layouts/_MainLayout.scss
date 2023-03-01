@@ -1,0 +1,35 @@
+.wrapper {
+    .header {
+        .header_container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding-top: 24px;
+            padding-bottom: 24px;
+            .header_item {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                .header_main_button {
+                    text-align: center;
+                    background-color: white;
+                    border-radius: 10px;
+                    padding: 12px;
+                    font-size: 24px;
+                    cursor: pointer;
+                    transition: all 0.1s;
+                    &:hover {
+                        border-radius: 0px;
+                    }
+                }
+            }
+        }
+    }
+    .container {
+        .content {}
+    }
+}
+
+.link {
+    text-decoration: none;
+}

@@ -1,0 +1,49 @@
+import { Grid } from "@mui/material";
+import React from "react";
+import { Link, To } from "react-router-dom";
+import "../scss/Pages/_Main.scss";
+
+
+type SectionButtonData=
+{
+    title:string;
+    link:To;
+}
+
+function Main() {
+
+    const sections:SectionButtonData[]=[
+        {
+            title:'Books',
+            link:'/books'
+        },
+        {
+            title:'Authors',
+            link:'/authors'
+        },
+        {
+            title:'Genres',
+            link:'/genres'
+        },
+        {
+            title:'Publishers',
+            link:'/publishers'
+        },
+    ]
+
+  return <div id="main_page">
+    <Grid container>
+    {sections.map(({title,link={}})=>
+        <Grid item xs={12} className='section_button_container' key={title}>
+            <Link to={link} className='section_button_link'>
+                <div className="section_button">
+                    <h3 className="section_button_text">{title}</h3>
+                </div>
+            </Link>
+        </Grid>
+    )}
+    </Grid>
+  </div>;
+}
+
+export default Main;

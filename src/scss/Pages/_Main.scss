@@ -1,0 +1,26 @@
+#main_page {
+    margin-top: 96px;
+    .section_button_container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        .section_button_link {
+            width: 50%;
+            text-decoration: none;
+            color: black;
+            border: 1px solid black;
+            border-radius: 10px;
+            padding: 12px;
+            margin-top: 12px;
+            margin-bottom: 12px;
+            transition: all 0.1s;
+            &:hover {
+                box-shadow: 4px 4px 8px 0px rgba(34, 60, 80, 0.2);
+                // transform: translateY(-10px);
+            }
+            .section_button {
+                .section_button_text {}
+            }
+        }
+    }
+}
