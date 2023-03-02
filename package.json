@@ -1,7 +1,7 @@
 {
     "name": "client",
     "version": "0.1.0",
-    "private": true,
+    "private": false,
     "homepage": "https://1maysway.github.io/Books_Db_Panel",
     "dependencies": {
         "@emotion/react": "^11.10.6",
