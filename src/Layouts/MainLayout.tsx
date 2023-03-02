@@ -8,7 +8,7 @@ const MainLayout = () => {
           <Container className="header">
             <Grid container className="header_container">
               <Grid item xs={12} className='header_item'>
-                <Link to={'/'} className='link'>
+                <Link to={'/Books_Db_Panel/'} className='link'>
                   <button className="header_main_button">TO MAIN PAGE</button>
                 </Link>
               </Grid>
