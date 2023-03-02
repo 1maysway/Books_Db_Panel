@@ -5,7 +5,7 @@ import "../scss/Pages/_AddBook.scss";
 import Form from "../Components/Form";
 import { Book } from "../Types/Types";
 import axios from "axios";
-import { SERVER_URL } from "..";
+import { PAGE_BASEPATH, SERVER_URL } from "..";
 
 
 const initialFormData:Book={
@@ -31,7 +31,7 @@ function AddBook() {
                 "Content-Type": "application/json"
             }
         });
-        window.location.assign('/Books_Db_Panel/books')
+        window.location.assign(PAGE_BASEPATH+'books')
     }
     catch(error){
         console.log(error);

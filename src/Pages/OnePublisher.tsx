@@ -2,7 +2,7 @@ import { Button, FormControl, FormHelperText, Grid, Input, InputLabel, TextField
 import axios, { AxiosError } from "axios";
 import React, { useEffect, useState } from "react";
 import { Link, To } from "react-router-dom";
-import { SERVER_URL } from "..";
+import { PAGE_BASEPATH, SERVER_URL } from "..";
 import Form from "../Components/Form";
 import Preloader from "../Components/Preloader";
 import "../scss/Pages/_OnePublisher.scss";
@@ -65,7 +65,7 @@ function OnePublisher() {
                     "Content-Type": "application/json"
                 }
             });
-            window.location.assign('/Books_Db_Panel/publishers')
+            window.location.assign(PAGE_BASEPATH+'publishers')
         }
         catch(error:any){
             console.log(error);
@@ -75,7 +75,7 @@ function OnePublisher() {
 
     useEffect(()=>{
         if(!isNumber(publishersId)){
-            window.location.assign('/Books_Db_Panel/publishers');
+            window.location.assign(PAGE_BASEPATH+'publishers');
             return;
         }
         FetchPublisher();
@@ -88,7 +88,7 @@ function OnePublisher() {
                     "Content-Type": "application/json"
                 }
             });
-            window.location.assign('/Books_Db_Panel/publishers')
+            window.location.assign(PAGE_BASEPATH+'publishers')
         }
         catch(error){
             console.log(error);

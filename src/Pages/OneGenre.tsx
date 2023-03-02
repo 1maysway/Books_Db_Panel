@@ -1,7 +1,7 @@
 import { Button, FormControl, FormHelperText, Grid, Input, InputLabel, TextField } from "@mui/material";
 import axios, { AxiosError } from "axios";
 import React, { useEffect, useState } from "react";
-import { SERVER_URL } from "..";
+import { PAGE_BASEPATH, SERVER_URL } from "..";
 import Form from "../Components/Form";
 import Preloader from "../Components/Preloader";
 import "../scss/Pages/_OneGenre.scss";
@@ -62,7 +62,7 @@ function OneGenre() {
                     "Content-Type": "application/json"
                 }
             });
-            window.location.assign('/Books_Db_Panel/genres')
+            window.location.assign(PAGE_BASEPATH+'genres')
         }
         catch(error:any){
             console.log(error);
@@ -77,7 +77,7 @@ function OneGenre() {
                     "Content-Type": "application/json"
                 }
             });
-            window.location.assign('/Books_Db_Panel/genres')
+            window.location.assign(PAGE_BASEPATH+'genres')
         }
         catch(error){
             console.log(error);
@@ -86,7 +86,7 @@ function OneGenre() {
 
     useEffect(()=>{
         if(!isNumber(genresId)){
-            window.location.assign('/Books_Db_Panel/genres');
+            window.location.assign(PAGE_BASEPATH+'genres');
             return;
         }
         FetchGenre();

@@ -1,6 +1,7 @@
 import { Grid } from "@mui/material";
 import React from "react";
 import { Link, To } from "react-router-dom";
+import { PAGE_BASEPATH } from "..";
 import "../scss/Pages/_Main.scss";
 
 
@@ -15,19 +16,19 @@ function Main() {
     const sections:SectionButtonData[]=[
         {
             title:'Books',
-            link:'/Books_Db_Panel/books'
+            link:PAGE_BASEPATH+'books'
         },
         {
             title:'Authors',
-            link:'/Books_Db_Panel/authors'
+            link:PAGE_BASEPATH+'authors'
         },
         {
             title:'Genres',
-            link:'/Books_Db_Panel/genres'
+            link:PAGE_BASEPATH+'genres'
         },
         {
             title:'Publishers',
-            link:'/Books_Db_Panel/publishers'
+            link:PAGE_BASEPATH+'publishers'
         },
     ]
 

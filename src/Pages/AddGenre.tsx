@@ -5,7 +5,7 @@ import "../scss/Pages/_AddGenre.scss";
 import Form from "../Components/Form";
 import { Book, Genre } from "../Types/Types";
 import axios from "axios";
-import { SERVER_URL } from "..";
+import { PAGE_BASEPATH, SERVER_URL } from "..";
 
 
 const initialFormData:Genre={
@@ -24,7 +24,7 @@ function AddGenre() {
                 "Content-Type": "application/json"
             }
         });
-        window.location.assign('/Books_Db_Panel/genres')
+        window.location.assign(PAGE_BASEPATH+'genres')
     }
     catch(error){
         console.log(error);

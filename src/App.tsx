@@ -18,8 +18,9 @@ import Publishers from './Pages/Publishers';
 
 function App() {
   return (
+    // /Books_Db_Panel
     <Routes >
-      <Route path="/Books_Db_Panel/" element={<MainLayout />} >
+      <Route path="/" element={<MainLayout />} >
         <Route path="" element={<Main/>} />
         <Route path="books" element={<Books/>} />
         <Route path="books/:id" element={<OneBook/>} />

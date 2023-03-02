@@ -2,7 +2,7 @@ import { Grid } from "@mui/material";
 import axios from "axios";
 import React, { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
-import { SERVER_URL } from "..";
+import { PAGE_BASEPATH, SERVER_URL } from "..";
 import Preloader from "../Components/Preloader";
 import "../scss/Pages/_Genres.scss";
 import { Genre } from "../Types/Types";
@@ -46,7 +46,7 @@ function Genres() {
       <Grid item xs={12}>
         <Grid container spacing={2}>
             <Grid item xs={3}>
-                <Link to={"/Books_Db_Panel/genres/add"}>
+                <Link to={PAGE_BASEPATH+"genres/add"}>
                     <button className="button">Add Genre</button>
                 </Link>
             </Grid>
@@ -57,7 +57,7 @@ function Genres() {
             {genres.map(({name,id})=>
                 (
                     <Grid item xs={12} key={id} className='genres_list_item'>
-                        <Link to={"/Books_Db_Panel/genres/"+id} className='genres_list_item_link'>
+                        <Link to={PAGE_BASEPATH+"genres/"+id} className='genres_list_item_link'>
                             <Grid container  className='genres_list_item_container'>
                                 <Grid item xs='auto'>
                                     <h3>{name}</h3>

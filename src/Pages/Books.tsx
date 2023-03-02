@@ -2,7 +2,7 @@ import { Grid } from "@mui/material";
 import axios from "axios";
 import React, { useEffect, useState } from "react";
 import { Link, To } from "react-router-dom";
-import { SERVER_URL } from "..";
+import { PAGE_BASEPATH, SERVER_URL } from "..";
 import Preloader from "../Components/Preloader";
 import "../scss/Pages/_Books.scss";
 import { Book } from "../Types/Types";
@@ -51,7 +51,7 @@ function Books() {
       <Grid item xs={12}>
         <Grid container spacing={2}>
             <Grid item xs={3}>
-                <Link to={"/Books_Db_Panel/books/add"}>
+                <Link to={PAGE_BASEPATH+"books/add"}>
                     <button className="button">Add Book</button>
                 </Link>
             </Grid>
@@ -62,7 +62,7 @@ function Books() {
             {books.map(({originalTitle,id})=>
                 (
                     <Grid item xs={12} key={id} className='books_list_item'>
-                        <Link to={"/Books_Db_Panel/books/"+id} className='books_list_item_link'>
+                        <Link to={PAGE_BASEPATH+"books/"+id} className='books_list_item_link'>
                             <Grid container  className='books_list_item_container'>
                                 <Grid item xs='auto'>
                                     <h3>{originalTitle}</h3>

@@ -5,7 +5,7 @@ import "../scss/Pages/_AddAuthor.scss";
 import Form from "../Components/Form";
 import { Author, Book } from "../Types/Types";
 import axios from "axios";
-import { SERVER_URL } from "..";
+import { PAGE_BASEPATH, SERVER_URL } from "..";
 
 
 const initialFormData:Author={
@@ -27,7 +27,7 @@ function AddAuthor() {
                 "Content-Type": "application/json"
             }
         });
-        window.location.assign('/Books_Db_Panel/authors')
+        window.location.assign(PAGE_BASEPATH+'authors')
     }
     catch(error){
         console.log(error);
