@@ -5,7 +5,7 @@ import App from './App';
 import { BrowserRouter } from 'react-router-dom';
 
 export const SERVER_URL='https://maysway.bsite.net/';
-export const PAGE_BASEPATH="/Books_Db_Panel/";
+export const PAGE_BASEPATH="/"; // Books_Db_Panel/
 export const PAGE_BASEURL="https://1maysway.github.io/";
 
 const root = ReactDOM.createRoot(
